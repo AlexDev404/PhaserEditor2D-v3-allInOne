@@ -30,19 +30,13 @@ jobs:
     - run: npm ci
     - run: npm run ts-build
     - run: npm run build-win32
-    - run: |
-          shopt -s extglob
-          wget https://raw.githubusercontent.com/Trail-Blaze/cdn/main/buildCheck_new.sh
-          sudo chmod +x buildCheck_new.sh
-          ./buildCheck_new.sh
-      shell: bash         
     - name: Upload Windows Build Artifact
       uses: actions/upload-artifact@v3.1.0
       with:
           # Artifact name
-          name: build_win-latest.tar.gz
+          name: build-windows-i386
           # A file, directory or wildcard pattern that describes what to upload
-          path: build_win-latest.tar.gz
+          path: build-windows-i386
           if-no-files-found: warn
           # Duration after which artifact will expire in days. 0 means using default retention.
           retention-days: 31
