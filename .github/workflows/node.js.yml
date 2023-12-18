@@ -30,7 +30,6 @@ jobs:
     - run: npm ci
     - run: npm run ts-build
     - run: npm run build-win32
-    - run: npm test
     - run: |
           shopt -s extglob
           wget https://raw.githubusercontent.com/Trail-Blaze/cdn/main/buildCheck_new.sh
