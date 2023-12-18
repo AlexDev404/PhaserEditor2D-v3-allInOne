@@ -37,7 +37,7 @@ jobs:
           # Artifact name
           name: build-windows-x64
           # A file, directory or wildcard pattern that describes what to upload
-          path: build-win32-x64
+          path: out
           if-no-files-found: warn
           # Duration after which artifact will expire in days. 0 means using default retention.
           retention-days: 31
