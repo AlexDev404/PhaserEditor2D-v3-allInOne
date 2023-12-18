@@ -21,6 +21,7 @@
 	"config": {
 		"forge": {
 			"packagerConfig": {
+				"dir": "./build/",
 				"icon": "build-assets/icon",
 				"ignore": [
 					"server",
